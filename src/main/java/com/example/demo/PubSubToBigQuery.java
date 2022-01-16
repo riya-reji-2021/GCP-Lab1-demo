@@ -99,7 +99,7 @@ public class PubSubToBigQuery {
                 pipeline.apply("ReadPubSubMessages", PubsubIO.readStrings()
                                 // Retrieve timestamp information from Pubsub Message attributes
                                 .withTimestampAttribute("timestamp")
-                                .fromTopic(options.getSubscription()))
+                                .fromSubscription(options.getSubscription()))
                         .apply("ConvertMessageToCommonLog", new PubsubMessageToCommonLog());
 
         // Write parsed messages to BigQuery
