@@ -11,8 +11,8 @@ import org.apache.beam.sdk.schemas.annotations.DefaultSchema;
 
 @DefaultSchema(JavaFieldSchema.class)
 public class CommonLog {
-    Integer id;
-    String name;
-    String surname;
+    @javax.annotation.Nullable int id;
+    @javax.annotation.Nullable String name;
+    @javax.annotation.Nullable String surname;
 }
 
