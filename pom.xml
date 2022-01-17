@@ -75,7 +75,7 @@
                 <groupId>org.codehaus.mojo</groupId>
                      <artifactId>exec-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.example.demo.PubSubToBigQuery<mainClass>
+                    <mainClass>com.example.demo.PubSubToBigQuery</mainClass>
                 </configuration>
             </plugin>
         </plugins>
