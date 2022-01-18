@@ -28,7 +28,7 @@ public class PubSubToBigQuery {
     private static final Logger LOG = LoggerFactory.getLogger(PubSubToBigQuery.class);
 
 
-    public interface Options extends PipelineOptions {
+    public interface Options extends DataflowPipelineOptions {
         @Description("Window duration length, in seconds")
         Integer getWindowDuration();
         void setWindowDuration(Integer windowDuration);
